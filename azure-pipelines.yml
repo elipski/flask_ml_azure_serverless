@@ -1,4 +1,5 @@
 # Starter pipeline
+
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
@@ -6,8 +7,25 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+variables:
+  # Azure Resource Manager connection created during pipeline creation
+  azureServiceConnectionId: '<youridhere>'
+
+  # Web app name
+  webAppName: 'flask-ml-service'
+
+  # Agent VM image name
+  vmImageName: 'ubuntu-latest'
+
+  # Environment name
+  environmentName: 'flask-ml-service'
+
+  # Project root folder. Point to the folder containing manage.py file.
+  projectRoot: $(System.DefaultWorkingDirectory)
+
+  # Python version: 3.8
+  pythonVersion: '3.8'
+
 
 steps:
 - script: echo Hello, world!
