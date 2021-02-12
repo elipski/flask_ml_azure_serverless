@@ -9,7 +9,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureServiceConnectionId: '<youridhere>'
+  azureServiceConnectionId: 'elipski.flask_ml_azure_serverless'
 
   # Web app name
   webAppName: 'flask-ml-service'
