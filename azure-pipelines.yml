@@ -12,7 +12,7 @@ variables:
   azureServiceConnectionId: 'flask-ml-azure-serverless service connection'
 
   # Web app name
-  webAppName: 'flask-ml-service'
+  webAppName: 'flask-ml-azure-serverless'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
