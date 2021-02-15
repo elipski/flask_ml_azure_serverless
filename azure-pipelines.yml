@@ -52,7 +52,7 @@ stages:
         python -m venv antenv
         source antenv/bin/activate
         make install
-        make lint
+        make -i lint
       workingDirectory: $(projectRoot)
       displayName: 'Run lint tests'
 
