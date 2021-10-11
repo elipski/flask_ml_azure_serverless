@@ -1,1 +1,1 @@
-# flask_ml_azure_serverliss
+# flask_ml_azure_serverless
